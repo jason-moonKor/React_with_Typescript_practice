@@ -1,15 +1,8 @@
-import React from 'react';
-import { Redirect } from 'react-router-dom';
+import React from "react";
+import SigninContainer from "../containers/SigninContainer";
 
-import useToken from '../hooks/useToken';
-import SigninContainer from '../containers/SigninContainer';
+function Signin() {
+	return <SigninContainer />;
+}
 
-const SigninPage = () => {
-  const token = useToken();
-  if (token !== null) {
-    return <Redirect to="/" />;
-  }
-  return <SigninContainer />;
-};
-
-export default SigninPage;
+export default Signin;

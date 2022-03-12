@@ -1,11 +1,7 @@
-import React from 'react';
-import { FallbackProps } from 'react-error-boundary';
+import React from "react";
 
-const Error: React.FC<FallbackProps> = ({ error }) => {
-  if (error === undefined) {
-    return <div>Unknown Error</div>;
-  }
-  return <div>{error.message}</div>;
-};
+function Error() {
+	return <div>Error</div>;
+}
 
 export default Error;
