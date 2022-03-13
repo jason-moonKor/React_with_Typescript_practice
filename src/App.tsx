@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import {Switch, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import Add from "./pages/Add";
 import Signin from "./pages/Signin";
@@ -8,11 +8,13 @@ import Error from "./pages/Error";
 import ErrorBoundary from "react-error-boundary";
 import Detail from "./pages/Detail";
 import Edit from "./pages/Edit";
+import {ConnectedRouter} from "connected-react-router";
+import history from "./history";
 
 function App() {
 	return (
 		<ErrorBoundary FallbackComponent={Error}>
-			<BrowserRouter>
+			<ConnectedRouter history={history}>
 				<Switch>
 					<Route exact path="/edit/:id" component={Edit} />
 					<Route exact path="/book/:id" component={Detail} />
@@ -21,7 +23,7 @@ function App() {
 					<Route exact path="/" component={Home} />
 					<Route component={NotFound} />
 				</Switch>
-			</BrowserRouter>
+			</ConnectedRouter>
 		</ErrorBoundary>
 	);
 }

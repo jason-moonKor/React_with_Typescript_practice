@@ -16,7 +16,7 @@
     "@types/redux-actions": "^2.6.1",
     "antd": "^4.1.0",
     "axios": "^0.19.2",
-    "connected-react-router": "^6.8.0",
+    "connected-react-router": "^6.9.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-error-boundary": "^1.2.5",
