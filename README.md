@@ -1,19 +1,19 @@
-# my-books
+nodejs version 12.18.1
 
-### nvm use or install node v12.18.1
+react-error-boundary
 
-```
-nvm use
-```
+react-router-dom
 
-### npm ci
+react-redux redux-saga redux-actions
 
-```
-npm ci
-```
+types/react-redux types/redux-actions
 
-### npm start
+antd
 
-```
-npm start
-```
+@ant-design/icons
+
+axios
+
+connected-react-router
+
+만드는듕입니다...
