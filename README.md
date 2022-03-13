@@ -16,4 +16,6 @@ axios
 
 connected-react-router
 
+moment
+
 만드는듕입니다...
